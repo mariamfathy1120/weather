@@ -19,7 +19,7 @@ async function LocationResult(key){
 
 
 async function getData(key){
-    let response =await fetch(`http://api.weatherapi.com/v1/forecast.json?key=137fb85c71ac4f31b5a174124252504&q=${key}&days=3`)
+    let response =await fetch(`https://api.weatherapi.com/v1/forecast.json?key=137fb85c71ac4f31b5a174124252504&q=${key}&days=3`)
     let data=await response.json();
     console.log(data)
     return data
