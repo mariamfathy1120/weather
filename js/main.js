@@ -1,8 +1,5 @@
-let searchInput=document.querySelector('#search-input')
+let searchInput=document.querySelector('#search-input');
 let weatherData;
-
-
-
 searchInput.addEventListener('input',function(){
    if(searchInput.value.length>2){
     LocationResult(searchInput.value)
