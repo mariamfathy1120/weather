@@ -1,0 +1,60 @@
+
+@media (max-width: 992px) {
+    .nav-links {
+        display: none;
+    }
+    .weather-forecast {
+        flex-direction: column;
+    }
+    .forecast {
+        flex-basis: 100%;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    }
+    .forecast:last-child {
+        border-bottom: none;
+    }
+    footer .container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .subscribe-form,
+    .social-links {
+        flex-basis: 100%;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    .social-links {
+        text-align: center;
+    }
+    .subscribe-form input[type="text"] {
+        padding: 15px; 
+        text-align: center;
+    }
+    .subscribe-form button {
+        position: static; 
+        display: block;
+        width: 100%;
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    .find-location input[type="text"] {
+        padding: 15px; /* Adjust padding */
+        text-align: center;
+    }
+    .find-location button {
+        position: static; /* Stack button below input */
+        display: block;
+        width: 100%;
+        margin-top: 10px;
+    }
+    .forecast.today .degree {
+        flex-direction: column;
+    }
+    .forecast.today .degree .forecast-icon {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+}
+
